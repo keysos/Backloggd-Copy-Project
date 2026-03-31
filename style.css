@@ -47,6 +47,7 @@ body {
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
     background-color: var(--back-primary);
+    color: var(--back-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,18 +60,27 @@ h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration: none;
     color: var(--back-link);
-    padding: 8px;
 }
 
 /* Layout containers */
 
 .nav-container,
-.main-container {
-    width: 60%;
-    min-width: 1040px;
+.profile-nav {
     margin: 0 auto;
-    padding: 0 15px;
     height: 38px;
+    max-width: 1140px;
+}
+
+.main-container,
+.main-content {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-content {
+    margin-top: 16px;
+    display: flex;
 }
 
 /* Navbar */
@@ -101,7 +111,7 @@ a {
     width: 100%;
     justify-content: flex-end;
     gap: 8px;
-    height: 38px;
+    min-height: 38px;
 }
 
 .nav-list {
@@ -109,11 +119,35 @@ a {
     padding-left: 0;
 }
 
+.nav-list a {
+    padding: 8px;
+}
 .logo {
     margin-right: 8px;
     font-size: 1.6rem;
     font-weight: bold;
     color: white;
+    margin-left: 15px;
+}
+
+.profile-nav {
+    display: flex;
+    height: 32px;
+    background-color: var(--back-secondary);
+    border-radius: 4px;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.profile-nav-itens {
+    padding: 0 4px;
+}
+
+.profile-nav-links{
+    margin: 0 5px;
+    padding: 0 8px;
+    font-size: 1rem;
+    position: relative;
 }
 
 /* Nav links */
@@ -184,6 +218,7 @@ a {
     border-radius: .25rem;
     border: 1px solid transparent;
     background-color: var(--back-pink-dk);
+    margin-right: 15px;
 }
 
 .add-a-game-btn:hover {
@@ -200,8 +235,7 @@ a {
 .profile-header {
     display: flex;
     align-items: center;
-    margin: 16px auto;
-    padding: 0 10px;
+    margin: 16px 15px;
 }
 
 .profile-header > img {
@@ -276,4 +310,40 @@ a {
 .profile-copy-btn img {
     width: 13px;
     height: 13px;
+}
+
+
+/*Profile Sidebar*/
+
+.profile-sidebar {
+    width: 190px;
+    padding: 0 15px;
+    height: 100vh;
+}
+
+.profile-sidebar, .bio-title {
+    display: block;
+    font-weight: 200;
+    margin: 0;
+}
+
+.bio-hr {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.bio-text {
+    color: hsla(0, 0%, 100%, .82);
+    display: block;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    position: relative;
+    line-height: 1.2rem;
+}
+
+hr {
+    border-color: rgba(162, 177, 229, .2);
 }
