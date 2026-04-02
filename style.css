@@ -151,9 +151,32 @@ a {
 
 .profile-nav-links {
     margin: 0 5px;
-    padding: 0 8px;
+    padding: 0 12px;
     font-size: 1rem;
     position: relative;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.profile-nav-links:hover .selected-bar {
+    color: var(--back-btn-toggled-text);
+    display: block;
+}   
+
+.selected-bar {
+    background-color: var(--back-interact);
+    display: none;
+    border-radius: 4px;
+    bottom: -7px;
+    height: 3px;
+    position: absolute;
+    right: 25%;
+    width: 56%;
+}
+
+.selected-bar.pink {
+    display: block;
+    background-color: var(--back-pink);
 }
 
 /* Nav links */
