@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -21,11 +22,11 @@
                 <div class="nav-right">
                     <ul class="nav-list">
                         <li class="nav-item"><a class="nav-link-notification" href="#">
-                                <img src="assets/bell-alt-svgrepo-com.svg" alt="">
+                                <i class="fa-regular fa-bell"></i>
                             </a></li>
                         <li class="nav-item"><a class="nav-link-dropdown" href="#">
                                 Zezos
-                                <img src="assets/arrow-down-svgrepo-com.svg" alt="">
+                                <i class="fa-solid fa-chevron-down"></i>
                             </a></li>
                         <li class="nav-item"><a class="nav-link-games" href="#">
                                 Games
@@ -36,10 +37,12 @@
                     <div class="search-container">
                         <input class="search-bar" type="search" placeholder="Search">
                         <button class="search-btn" type="submit">
-                            <img src="assets/magnifying-glass-svgrepo-com.svg" alt="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
-                    <button class="add-a-game-btn"> Log a Game</button>
+                    <button class="add-a-game-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Log a Game</button>
                 </div>
             </div>
         </nav>
@@ -56,20 +59,20 @@
                     </div>
                     <div class="profile-middle-row">
                         <a class="profile-link letterboxd" href="#">
-                            <img src="assets/letterboxd-svgrepo-com.svg" alt="">
+                            <i class="fa-brands fa-letterboxd"></i>
                             Zeze_Keysos
                         </a>
                         <a class="profile-link steam" href="#">
-                            <img src="assets/steam-svgrepo-com.svg" alt="">
+                            <i class="fa-brands fa-steam"></i>
                             Steam Profile</a>
                         <a class="profile-link twitter" href="#">
-                            <img src="assets/Twitter-X--Streamline-Bootstrap.svg" alt="">
+                            <i class="fa-brands fa-x-twitter"></i>
                             keysos_</a>
                     </div>
                     <div class="profile-bottom-row">
                         <button class="profile-edit-btn btn">Edit Profile</button>
                         <button class="profile-copy-btn btn">
-                            <img src="assets/copy-svgrepo-com.svg" alt="">
+                            <i class="fa-solid fa-link"></i>
                         </button>
                     </div>
                 </div>
@@ -199,6 +202,112 @@
                     </div>
                     <div class="sidebar-link-container">
                         <a class="sidebar-link" href="#">View All</a>
+                    </div>
+                </div>
+
+                <div class="profile-games-display">
+                    <div class="favorite-games">
+                        <h2 class="favorite-logo">Favorite Games</h2>
+                        <div class="favorite-games-row">
+                            <div class="favorite-games-item">
+                                <div class="space-between-game">
+                                    <i class="fa-solid fa-crown"></i>
+                                </div>
+                                <a class="game-card favorite" href="#">
+                                    <img class="game-cover" src="images/chronotrigger.jpg" alt="">
+                                    <span class="game-title">Chrono Trigger</span>
+                                    <div class="overlay"></div>
+                                    <div class="quickacess-bar">
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-book"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="favorite-games-item">
+                                <div class="space-between-game"></div>
+                                <a class="game-card" href="#">
+                                    <img class="game-cover" src="images/baldursgate3.jpg" alt="">
+                                    <span class="game-title">Baldur's Gate III</span>
+                                    <div class="overlay"></div>
+                                    <div class="quickacess-bar">
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-book"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="favorite-games-item">
+                                <div class="space-between-game"></div>
+                                <a class="game-card" href="#">
+                                    <img class="game-cover" src="images/darksouls.jpg" alt="">
+                                    <span class="game-title">Dark Souls Remastered</span>
+                                    <div class="overlay"></div>
+                                    <div class="quickacess-bar">
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-book"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="favorite-games-item">
+                                <div class="space-between-game"></div>
+                                <a class="game-card" href="#">
+                                    <img class="game-cover" src="images/reddead2.jpg" alt="">
+                                    <span class="game-title">Red Dead Redemption 2</span>
+                                    <div class="overlay"></div>
+                                    <div class="quickacess-bar">
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-book"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="favorite-games-item">
+                                <div class="space-between-game"></div>
+                                <a class="game-card" href="#">
+                                    <img class="game-cover" src="images/silenthill.jpg" alt="">
+                                    <span class="game-title">Silent Hill 2</span>
+                                    <div class="overlay"></div>
+                                    <div class="quickacess-bar">
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-book"></i>
+                                        </button>
+                                        <button class="quickacess-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
