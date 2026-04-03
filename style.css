@@ -36,20 +36,81 @@
 
 /* Reset & Base */
 
+/*Utilitary Classes*/
+
+.flex {
+    display: flex;
+}
+
+.flex-grow {
+    flex: 1;
+}
+
+.flex-basis {
+    flex-basis: 0;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.align {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* SPACING */
+.p-15 {
+    padding: 15px;
+}
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+/* SIZE */
+
+.max-w {
+    max-width: 1140px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+
+/*------------------ */
+
 body {
-    display: flex;
     margin: 0;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
     background-color: var(--back-primary);
     color: var(--back-text);
-    flex-direction: column;
 }
 
 h1,
@@ -76,47 +137,17 @@ p {
 
 /* Layout containers */
 
-.nav-container,
-.profile-nav {
-    margin: 0 auto;
-    max-width: 1140px;
-}
-
-.main-container {
-    flex: 1;
-}
-
-.main-container,
-.main-content {
-    max-width: 1140px;
-    margin: 0 auto;
-    width: 100%;
-}
-
 .main-content {
     margin-top: 16px;
-    display: flex;
 }
 
 /* Navbar */
 
 .navbar {
-    width: 100%;
     padding: 8px 16px;
     font-size: 11pt;
     font-weight: 500;
     display: block;
-}
-
-.nav-container,
-.nav-right,
-.nav-list,
-.nav-link-dropdown,
-.nav-link-games,
-.nav-link-notification,
-.search-container {
-    display: flex;
-    align-items: center;
 }
 
 .nav-link-games:hover,
@@ -135,7 +166,6 @@ p {
 }
 
 .nav-right {
-    width: 100%;
     justify-content: flex-end;
     gap: 8px;
     min-height: 38px;
@@ -159,11 +189,9 @@ p {
 }
 
 .profile-nav {
-    display: flex;
     height: 32px;
     background-color: var(--back-secondary);
     border-radius: 4px;
-    align-items: center;
     margin: 0 15px;
 }
 
@@ -279,8 +307,6 @@ p {
 /* Profile */
 
 .profile-header {
-    display: flex;
-    align-items: center;
     margin: 16px 15px;
 }
 
@@ -291,9 +317,6 @@ p {
 }
 
 .profile-rows {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     height: 95px;
     margin: 3.7px 0;
 }
@@ -313,8 +336,6 @@ p {
 }
 
 .profile-link {
-    display: flex;
-    align-items: center;
     gap: 3px;
 }
 
@@ -326,11 +347,6 @@ p {
     color: var(--back-link);
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.profile-middle-row {
-    display: flex;
-    align-items: center;
 }
 
 /* Icons */
@@ -431,17 +447,12 @@ hr {
     min-height: 70px;
     text-align: center;
     height: 70px;
-    display: flex;
 }
 
 .rating-bar {
-    flex-basis: 0;
-    flex-grow: 1;
     max-width: 100%;
     min-width: 0;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
+    height: 70px;;
 }
 
 .bar-h {
@@ -467,17 +478,10 @@ hr {
 }
 
 .rating-stars {
-    display: flex;
     font-size: .9rem;
     font-weight: 200;
     line-height: normal;
     color: var(--back-text-secondary);
-}
-
-.star-right,
-.star-left {
-    flex-basis: 0;
-    flex-grow: 1;
 }
 
 .star-right {
@@ -491,16 +495,11 @@ hr {
 }
 
 .badges-container {
-    display: flex;
     margin-bottom: .5rem !important;
     height: 40px;
 }
 
 .badge {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: transparent;
     cursor: pointer;
     padding: 1px;
@@ -516,11 +515,6 @@ hr {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-}
-
-.sidebar-link-container {
-    display: flex;
-    justify-content: center;
 }
 
 .sidebar-link {
@@ -539,8 +533,6 @@ hr {
 
 .profile-games-display {
     padding: 0 15px 0 24px;
-    flex-basis: 0;
-    flex-grow: 1;
     max-width: 100%;
 }
 
@@ -549,8 +541,7 @@ hr {
     color: var(--back-text);
 }
 
-.favorite-games-row {
-    display: flex;
+.games-row {
     flex-wrap: wrap;
     margin-bottom: 1rem !important;
 }
@@ -559,8 +550,7 @@ hr {
     padding: 0 -4px 16px;
 }
 
-.favorite-games-item,
-.recently-played-item {
+.games-item {
     display: block;
     position: relative;
     margin: 0 0 8px;
@@ -570,9 +560,6 @@ hr {
 .space-between-game {
     margin: 0 -15px 4px;
     height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .game-card {
@@ -581,7 +568,6 @@ hr {
     overflow: hidden;
     border: 1px solid var(--back-field);
     border-radius: 5px;
-    width: 100%;
     max-width: 174px;
     aspect-ratio: 174 / 234;
 }
@@ -599,8 +585,7 @@ hr {
     z-index: 1;
 }
 
-.favorite-games-item:hover .overlay,
-.recently-played-item:hover .overlay {
+.games-item:hover .overlay {
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -618,7 +603,6 @@ hr {
     left: 50%;
     transform: translateX(-50%);
 
-    display: flex;
     gap: 6px;
     padding: 6px 10px;
 
@@ -656,18 +640,15 @@ hr {
     transition: opacity 0.3s ease;
 }
 
-.favorite-games-item:hover .game-title,
-.recently-played-item:hover .game-title {
+.games-item:hover .game-title {
     opacity: 1;
 }
 
-.favorite-games-item:hover .game-cover,
-.recently-played-item:hover .game-cover {
+.games-item:hover .game-cover {
     border-color: var(--back-field-highlight);
 }
 
-.favorite-games-item:hover .quickacess-bar,
-.recently-played-item:hover .quickacess-bar {
+.games-item:hover .quickacess-bar {
     opacity: 1;
 }
 
@@ -685,9 +666,6 @@ hr {
 /* Profile Stats */
 
 .profile-stats {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 1rem !important;
     padding-top: 0.5rem;
 }
@@ -713,23 +691,12 @@ hr {
 
 /* recently played */
 
-.recently-played {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .recently-played-row {
-    display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem !important;
 }
 
-.recently-played-item {}
-
 .recently-played-row-logo {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     margin-top: 1rem !important;
 }
 
@@ -748,21 +715,13 @@ hr {
 }
 
 .footer {
-    width: 100%;
     height: 10rem;
 }
 
 .footer-container {
-    margin: 0 auto;
     padding: 0 15px;
-    max-width: 1140px;
     margin-top: .5rem !important;
     margin-bottom: .5rem !important;
-}
-
-.footer-text {
-    display: flex;
-
 }
 
 .footer-item {
@@ -780,7 +739,6 @@ hr {
 }
 
 .social-media {
-    display: flex;
     margin-left: auto;
 }
 
@@ -791,7 +749,6 @@ hr {
 }
 
 .footer-text-small {
-    display: flex;
     text-align: center;
     gap: 4px;
 }
@@ -860,7 +817,7 @@ hr {
         margin-top: 12px;
     }
 
-    .profile-header > img {
+    .profile-header>img {
         width: 80px;
         height: 80px;
     }

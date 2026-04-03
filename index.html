@@ -13,28 +13,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body class="flex flex-col">
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
+        <nav class="navbar w-100">
+            <div class="nav-container flex align m-auto max-w">
                 <p class="logo">Backloggd</p>
 
-                <div class="nav-right">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a class="nav-link-notification" href="#">
+                <div class="nav-right flex align w-100">
+                    <ul class="nav-list flex align">
+                        <li class="nav-item"><a class="nav-link-notification flex align" href="#">
                                 <i class="fa-regular fa-bell"></i>
                             </a></li>
-                        <li class="nav-item"><a class="nav-link-dropdown" href="#">
+                        <li class="nav-item"><a class="nav-link-dropdown flex align" href="#">
                                 Zezos
                                 <i class="fa-solid fa-chevron-down"></i>
                             </a></li>
-                        <li class="nav-item"><a class="nav-link-games" href="#">
+                        <li class="nav-item"><a class="nav-link-games flex align" href="#">
                                 Games
                             </a>
                         </li>
                     </ul>
 
-                    <div class="search-container">
+                    <div class="search-container flex align">
                         <input class="search-bar" type="search" placeholder="Search">
                         <button class="search-btn" type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -49,23 +49,23 @@
     </header>
 
     <main role="main" class="main">
-        <div class="main-container">
-            <div class="profile-header col">
+        <div class="main-container flex-grow m-auto w-100 max-w">
+            <div class="profile-header flex align">
                 <img src="images/profile-picture.jpg" alt="">
 
-                <div class="profile-rows">
+                <div class="profile-rows flex flex-col w-100">
                     <div class="profile-top-row">
                         <h3 class="profile-name">Zezos</h3>
                     </div>
-                    <div class="profile-middle-row">
-                        <a class="profile-link letterboxd" href="#">
+                    <div class="profile-middle-row flex align">
+                        <a class="profile-link flex align letterboxd" href="#">
                             <i class="fa-brands fa-letterboxd"></i>
                             Zeze_Keysos
                         </a>
-                        <a class="profile-link steam" href="#">
+                        <a class="profile-link flex align steam" href="#">
                             <i class="fa-brands fa-steam"></i>
                             Steam Profile</a>
-                        <a class="profile-link twitter" href="#">
+                        <a class="profile-link flex align twitter" href="#">
                             <i class="fa-brands fa-x-twitter"></i>
                             keysos_</a>
                     </div>
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="profile-nav">
+            <div class="profile-nav flex align m-auto max-w">
                 <div class="profile-nav-container">
                     <a class="profile-nav-links" href="#">
                         Profile
@@ -129,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="main-content">
+            <div class="main-content flex m-auto w-100 max-w">
 
                 <div class="profile-sidebar">
                     <div class="sidebar-bio">
@@ -142,41 +142,41 @@
                     <div class="sidebar-rating">
                         <span class="sidebar-title">Personal Ratings</span>
                         <hr class="hr">
-                        <div class="rating-table">
-                            <div class="rating-bar">
+                        <div class="rating-table flex">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h empty"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h empty"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h empty"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h empty"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h" style="height: 4.1666666666%;"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h" style="height: 16.666666666%;"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h" style="height: 100%;"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h" style="height: 95.8333333333%;"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h" style="height: 54.16666666666%;"></div>
                             </div>
-                            <div class="rating-bar">
+                            <div class="rating-bar flex flex-col flex-grow flex-basis">
                                 <div class="bar-h" style="height: 58.3333333333336%;"></div>
                             </div>
                         </div>
-                        <div class="rating-stars">
-                            <div class="star-left">1★</div>
-                            <div class="star-right">5★</div>
+                        <div class="rating-stars flex">
+                            <div class="star-left flex-grow flex-basis">1★</div>
+                            <div class="star-right flex-grow flex-basis">5★</div>
                         </div>
                     </div>
 
@@ -184,40 +184,40 @@
                         <div class="profile-games">
                             <span class="sidebar-title badges">Earned Badges</span>
                             <hr class="hr">
-                            <div class="badges-container">
-                                <div class="badge">
+                            <div class="badges-container flex">
+                                <div class="badge flex flex-grow align justify-center">
                                     <img src="assets/badge4.svg" alt="">
                                 </div>
-                                <div class="badge">
+                                <div class="badge flex flex-grow align justify-center">
                                     <img src="assets/badge3.svg" alt="">
                                 </div>
-                                <div class="badge">
+                                <div class="badge flex flex-grow align justify-center">
                                     <img src="assets/badge2.svg" alt="">
                                 </div>
-                                <div class="badge">
+                                <div class="badge flex flex-grow align justify-center">
                                     <img src="assets/badge1.svg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sidebar-link-container">
+                    <div class="sidebar-link-container flex justify-center">
                         <a class="sidebar-link" href="#">View All</a>
                     </div>
                 </div>
 
-                <div class="profile-games-display">
-                    <div class="favorite-games">
+                <div class="profile-games-display flex-grow flex-basis">
+                    <div class="games-section">
                         <h2 class="favorite-logo">Favorite Games</h2>
-                        <div class="favorite-games-row">
-                            <div class="favorite-games-item">
-                                <div class="space-between-game">
+                        <div class="games-row flex">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center">
                                     <i class="fa-solid fa-crown"></i>
                                 </div>
-                                <a class="game-card favorite" href="#">
+                                <a class="game-card favorite w-100" href="#">
                                     <img class="game-cover" src="images/chronotrigger.jpg" alt="">
                                     <span class="game-title">Chrono Trigger</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -231,13 +231,13 @@
                                 </a>
 
                             </div>
-                            <div class="favorite-games-item">
-                                <div class="space-between-game"></div>
-                                <a class="game-card" href="#">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center"></div>
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/baldursgate3.jpg" alt="">
                                     <span class="game-title">Baldur's Gate III</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -250,13 +250,13 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="favorite-games-item">
-                                <div class="space-between-game"></div>
-                                <a class="game-card" href="#">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center"></div>
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/darksouls.jpg" alt="">
                                     <span class="game-title">Dark Souls Remastered</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -269,13 +269,13 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="favorite-games-item">
-                                <div class="space-between-game"></div>
-                                <a class="game-card" href="#">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center"></div>
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/reddead2.jpg" alt="">
                                     <span class="game-title">Red Dead Redemption 2</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -288,13 +288,13 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="favorite-games-item">
-                                <div class="space-between-game"></div>
-                                <a class="game-card" href="#">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center"></div>
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/silenthill.jpg" alt="">
                                     <span class="game-title">Silent Hill 2</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -312,7 +312,7 @@
 
                     <hr class="hr">
 
-                    <div class="profile-stats">
+                    <div class="profile-stats flex align justify-center">
                         <div class="left-stats">
                             <h1>089</h1>
                             <h4>Total Games Played</h4>
@@ -329,21 +329,21 @@
                     </div>
                     <hr class="hr">
 
-                    <div class="recently-played">
-                        <div class="recently-played-row-logo">
-                            <h2 class="recently-played-logo">Recently Played</h2>
+                    <div class="games-section">
+                        <div class="recently-played-row-logo flex justify-between w-100">
+                            <h2 class="recently-played-logo flex">Recently Played</h2>
                             <a class="sidebar-link" href="#">View All</a>
                         </div>
 
-                        <div class="recently-played-row">
-                            <div class="recently-played-item">
-                                <div class="space-between-game">
+                        <div class="games-row flex">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center">
                                 </div>
-                                <a class="game-card" href="#">
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/ittakestwo.jpg" alt="">
                                     <span class="game-title">It Takes Two</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -357,13 +357,13 @@
                                 </a>
 
                             </div>
-                            <div class="recently-played-item">
-                                <div class="space-between-game"></div>
-                                <a class="game-card" href="#">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center"></div>
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/residentevil7.jpg" alt="">
                                     <span class="game-title">Resident Evil 7: Biohazard</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -376,13 +376,13 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="recently-played-item">
-                                <div class="space-between-game"></div>
-                                <a class="game-card" href="#">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center"></div>
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/residentevil5.jpg" alt="">
                                     <span class="game-title">Resident Evil 5: Gold Edition</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -395,13 +395,13 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="recently-played-item">
-                                <div class="space-between-game"></div>
-                                <a class="game-card" href="#">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center"></div>
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/eldenring.jpg" alt="">
                                     <span class="game-title">Elden Ring</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -414,13 +414,13 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="recently-played-item">
-                                <div class="space-between-game"></div>
-                                <a class="game-card" href="#">
+                            <div class="games-item">
+                                <div class="space-between-game flex align justify-center"></div>
+                                <a class="game-card w-100" href="#">
                                     <img class="game-cover" src="images/splitfiction.jpg" alt="">
                                     <span class="game-title">Split Fiction</span>
                                     <div class="overlay"></div>
-                                    <div class="quickacess-bar">
+                                    <div class="quickacess-bar flex">
                                         <button class="quickacess-btn">
                                             <i class="fa-solid fa-gamepad"></i>
                                         </button>
@@ -442,10 +442,10 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="footer-container">
+    <footer class="footer w-100">
+        <div class="footer-container m-auto max-w">
             <div class="footer-row">
-                <div class="footer-text">
+                <div class="footer-text flex">
                     <div class="footer-item">
                         <a class="footer-link" href="#">About</a>
                     </div>
@@ -465,7 +465,7 @@
                         <a class="footer-link" href="#">Privacy</a>
                     </div>
 
-                    <div class="social-media">
+                    <div class="social-media flex">
                         <div class="footer-social-media">
                             <a href="">
                                 <i class="fa-brands fa-patreon"></i>
@@ -491,7 +491,7 @@
                 </div>
             </div>
             <div class="footer-row-small">
-                <div class="footer-text-small">
+                <div class="footer-text-small flex">
                     <div class="footer-small-item">
                         <div>© Backloggd LLC •</div>
                     </div>
