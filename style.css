@@ -872,7 +872,7 @@ hr {
         display: flex;
         flex-wrap: nowrap;      
         overflow-x: auto;     
-        gap: 8px;
+        overflow-x: hidden;
     }
 
     .games-section .games-item {
