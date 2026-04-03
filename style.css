@@ -452,7 +452,8 @@ hr {
 .rating-bar {
     max-width: 100%;
     min-width: 0;
-    height: 70px;;
+    height: 70px;
+    ;
 }
 
 .bar-h {
@@ -817,6 +818,20 @@ hr {
         margin-top: 12px;
     }
 
+    .profile-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 6px 4px;
+        gap: 4px;
+    }
+
+    .profile-nav-links {
+        padding: 6px 8px;
+        font-size: 0.9rem;
+    }
+
     .profile-header>img {
         width: 80px;
         height: 80px;
@@ -831,6 +846,8 @@ hr {
         flex-wrap: wrap;
         justify-content: center;
         gap: 6px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 
     .profile-bottom-row {
@@ -850,8 +867,20 @@ hr {
     }
 
     /* Games */
-    .favorite-games-row,
-    .recently-played-row {
+
+    .games-section .games-row {
+        display: flex;
+        flex-wrap: nowrap;      
+        overflow-x: auto;     
+        gap: 8px;
+    }
+
+    .games-section .games-item {
+        flex: 1;           
+        min-width: 0;          
+    }
+
+    .games-row {
         justify-content: center;
     }
 
