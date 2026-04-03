@@ -542,11 +542,6 @@ hr {
     color: var(--back-text);
 }
 
-.games-row {
-    flex-wrap: wrap;
-    margin-bottom: 1rem !important;
-}
-
 .profile-games-row {
     padding: 0 -4px 16px;
 }
@@ -870,14 +865,14 @@ hr {
 
     .games-section .games-row {
         display: flex;
-        flex-wrap: nowrap;      
-        overflow-x: auto;     
+        flex-wrap: nowrap;
+        overflow-x: auto;
         overflow-x: hidden;
     }
 
     .games-section .games-item {
-        flex: 1;           
-        min-width: 0;          
+        flex: 1;
+        min-width: 0;
     }
 
     .games-row {
