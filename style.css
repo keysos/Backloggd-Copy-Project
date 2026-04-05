@@ -546,6 +546,10 @@ hr {
     padding: 0 -4px 16px;
 }
 
+.games-row {
+    margin-bottom: 1rem !important;
+}
+
 .games-item {
     display: block;
     position: relative;
