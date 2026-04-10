@@ -895,7 +895,6 @@ hr {
     }
 
     .profile-stats {
-        flex-direction: column;
         gap: 10px;
     }
 
